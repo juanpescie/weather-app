@@ -1,0 +1,23 @@
+body{
+  background-image: url("https://i.pinimg.com/originals/4c/d7/08/4cd708738d7c9138afab6df36af00d83.jpg") !important ;
+}
+.App {
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+.ciudad{
+  display: flex;
+  justify-content: center;
+}
+.info h4{
+  margin: 7%;
+}
+
+.boton:hover{
+  background-color: rgb(145, 63, 145);
+  color: white;
+}
