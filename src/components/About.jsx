@@ -11,7 +11,7 @@ export default function About() {
             <p>And technologies like react and bootstrap </p>
             <p>Then i used the weather API to bring all the data</p>
         </div>
-        <Link to="/">Back to the Home Page</Link>
+        <Link to="https://github.com/juanpescie/weather-app">Back to the Github Page</Link>
         </React.Fragment>
         )
 }
