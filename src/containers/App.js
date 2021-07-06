@@ -15,7 +15,7 @@ function App() {
   }
   function onSearch(ciudad) {
     //Llamado a la API del clima
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${apiKey}`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${apiKey}`)
       .then(response => response.json())
       .then((recurso) => {
         if(recurso.main !== undefined){
@@ -33,7 +33,6 @@ function App() {
             latitud: recurso.coord.lat,
             longitud: recurso.coord.lon
           };
-          console.log(ciudad.actual)
           if(!cities.find(city=> city.id === ciudad.id)) {
             setCities(oldCities => [...oldCities, ciudad]);
           }
